@@ -2,62 +2,88 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Reservia</title>
     </head>
     <body>
         <div id="bloc_page">
             <header>
+
                 <div id="titre_principal">
                     <div id="logo">
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     </div>
-                    <h2>En plein centre ville ou en pleine nature</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
                     </div>
 
                     <!---Bouton navigation--->
                     <nav>
-                        <ul>
-                            <li><a href="#">Hébergement</a></li>
-                            <li><a href="#">Activités</a></li>
-                            <li><a href="#">S'incrire</a></li>
+                        <ul id="menu">
+                            <li><a href="#hébergements">Hébergements</a></li>
+                            <li><a href="#activités">Activités</a></li>
+                            <li><a href="#"><strong>S'incrire</strong></a></li>
                         </ul>
                     </nav>
                 </header>
 
                 <!---Bouton MRS--->
-
+                <form role="search">
+                    <div>
+                    <img src="map.svg" alt="Map" id="Map" />
+                    <input type="search" id="maRecherche" name="q"
+                    placeholder="Marseille, France"
+                    aria-label="Rechercher parmi le contenu du site">
+                    <button>Rechercher</button>
+                </div>
+            </form>
+        </br>
                 <!---Filtres--->
-                <p>Plus de 500 logements sont disponible dans cette ville</p>
+                <div id="conteneur">
+                    <div class="element 1">Filtres</div>
+                    <div class="element 2"><img src="money.svg" alt="money" id="money" />Economique</div>
+                    <div class="element 3"><img src="child.svg" alt="child" id="child" />Familial</div>
+                    <div class="element 4"><img src="heart.svg" alt="heart" id="heart" />Romantique</div>
+                    <div class="element 5"><img src="dog.svg" alt="dog" id="dog" />Animaux autorisés</div>
+                </div>
+
+                <!---Plus de 500 logements--->
+                <p><img src="info.svg" alt="info" id="info" />  Plus de 500 logements sont disponible dans cette ville</p>
 
                 <!---Block Hébergements à Marseille--->
-                <section>
-                    <h1>Hébergements à Marseille</h1>
-
-                    <article>
-                        <figure><img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" />Auberge de Cannebière Nuit à partir de 25 euros</figure>
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                    </article>
+                <section class="first-container">
+                    <div class="first" id="first">
+                      <h2 id="hébergements">Hébergements à Marseille</h2>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" />
+                        <p><strong>Auberge de Cannebière</strong></br>Nuit à partir de <strong>25 euros</strong></p></figure>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel2.jpg" alt="hotel2" id="hotel2" />
+                        <p><strong>Hôtel du port</strong></br>Nuit à partir de 52 <strong>euros</strong></p></figure>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel3.jpg" alt="hotel3" id="hotel3" />
+                        <p><strong>Hôtel Les mouettes</strong></br>Nuit à partir de 76 <strong>euros</strong></p></figure>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel4.jpg" alt="hotel4" id="hotel4" />
+                        <p><strong>Hôtel de la mer</strong></br>Nuit à partir de 46 <strong>euros</strong></p></figure>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel5.jpg" alt="hotel5" id="hotel5" />
+                        <p><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23 euros</strong></p></figure>
+                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" />
+                        <p><strong>Hôtel chez Amina</strong></br>Nuit à partir de 96 <strong>euros</strong></p></figure>
+                    </div>
                 </section>
 
                 <!---Block Aside Les plus Populaires--->
-                <section>
-                    <h1>Les plus populaires</h1>
+                <section class="second-container">
+                <div class="second" id="second">
+                    <h2>Les plus populaires</h2>
                     <aside>
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/Projet 2 - Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
+                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
+                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
+                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
                     </aside>
+                  </div>
                 </section>
 
                 <!---Activités à Marseille--->
                 <section>
-                    <h1>Activites à Marseille</h1>
+                    <h1 id="activités">Activités à Marseille</h1>
                     <article>
                         
                     </article>
