@@ -2,13 +2,8 @@
 @font-face 
 {
   font-family: 'Raleway';
-  src: url(/users/mathmiko/desktop/reservia/raleway/raleway.eot); /* IE9 Compat Modes */
-  src: url(/users/mathmiko/desktop/reservia/raleway/raleway.eot?#iefix), format('embedded-opentype'), /* IE6-IE8 */
-       url(/users/mathmiko/desktop/reservia/raleway/raleway.woff) format('woff'), /* Modern Browsers */
-       url(/users/mathmiko/desktop/reservia/raleway/raleway.ttf) format('truetype'), /* Safari, Android, iOS */
-       url(/users/mathmiko/desktop/reservia/raleway/raleway.svg#Raleway) format('svg'); /* Legacy iOS */
-   font-style: normal;
-   font-weight: normal;
+  src: url(/users/mathmiko/desktop/reservia/raleway-2/raleway-variablefont_wght.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(/users/mathmiko/desktop/reservia/raleway-2/static/raleway-bold.ttf) format('truetype2');
 }
 
 /*Body*/
@@ -17,13 +12,13 @@ body
 {
     margin: 30px;
 	padding: 0px;
-	max-width: 1280px;
+	max-width: auto;
 	font-family: 'Raleway', Arial, serif;
 }
 
 #bloc_page
 {
-    width: 1280px;
+    width: auto;
     margin: auto;
 }
 
@@ -33,6 +28,7 @@ body
 {
   font-family: 'Raleway', Arial, serif;
   float: right;
+  justify-content: flex-end;
 }
 
 nav ul
@@ -41,7 +37,7 @@ nav ul
 }
 nav li
 {
-	margin-right: 25px;
+	margin-right: 35px;
     font-family: 'Raleway', Arial, serif;
     display: inline;
 }
@@ -56,7 +52,7 @@ nav a
 nav a:hover
 {
     color: #0065FC;
-    border-top: 1.5px solid #0065FC;
+    border-top: 1.2px solid #0065FC;
 }
 nav strong
 {
@@ -69,7 +65,6 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
 header h1
 {
@@ -84,18 +79,18 @@ header p
 
 #logo
 {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 /* Plus d'informations */
 
 #info
 {
-	width: 17px;
-	height: 17px;
-	background-color: #FFFFFF;
-	color: #0065FC;
-	font-family: 'Raleway', Arial, serif;
+	font-size: 25px;
+	color: #FFFFFF;
+	border: 2px #F2F2F2 solid;
+	border-radius: 20px;
+	background-color: #0065FC;
 }
 
 p
@@ -109,16 +104,19 @@ p
 {
 	display: flex;
 	justify-content: flex-start;
-	height: 50px;
-
+	height: 70px;
+	width: 500px;
 }
 
-#Map
+#map
 {
-	height: 48px;
-	width: 48px;
+	height: 46px;
+	width: 50px;
 	border: 1px #F2F2F2 solid;
 	border-radius: 20px 0px 0px 20px;
+	background-color: #F2F2F2;
+	text-align: center;
+	font-size: 25px;
 }
 
 #marecherche
@@ -127,92 +125,139 @@ p
 	background-color: #FFFFFF;
 	border: 1px #F2F2F2 solid;
 	font-family: 'Raleway', Arial, serif;
+	font-weight : bold;
+	font-size: 18px;
+	height: 48px;
+	width: 220px;
+	text-align: left;
 }
 
-#bouton
+#chercher
 {
 	color: #FFFFFF;
 	background-color: #0065FC;
 	border: 1px #0065FC solid;
 	border-radius: 0px 20px 20px 0px;
+	height: 48px;
+	width: 180px;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: bold;
 }
 
 /*Filtres*/
 
-#conteneur
+#bloc1
 {
 	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	height: 70px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: auto;
 }
 
-#ele2
+#bloc1 i
+{
+	color: #0065FC;
+	font-size: 23px;
+	background-color: rgb(221,236,255);
+	border-radius: 20px 20px 20px 20px;
+	height: 35px;
+	width: 45px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+#elem2:hover
+{
+	background-color: #F2F2F2;
+}
+#elem3:hover
+{
+	background-color: #F2F2F2;
+}
+#elem4:hover
+{
+	background-color: #F2F2F2;
+}
+#elem5:hover
+{
+	background-color: #F2F2F2;
+}
+
+#ele1
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#elem2
 {
 	color: black;
 	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
+	border: 3px #F2F2F2 solid;
 	font-family: 'Raleway', Arial, serif;
+	font-size: 16px;
 	border-radius: 20px;
+	width: 175px;
+	height: 40px;
+	text-align: left;
+	font-weight: bold;
+	display: inline-block;
 }
 
-#ele3
+#elem3
 {
 	color: black;
 	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
+	border: 3px #F2F2F2 solid;
 	font-family: 'Raleway', Arial, serif;
+	font-size: 16px;
 	border-radius: 20px;
+	width: 150px;
+	height: 40px;
+	text-align: left;
+	font-weight: bold;
+	display: inline-block;
 }
 
-#ele4
+#elem4
 {
 	color: black;
 	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
+	border: 3px #F2F2F2 solid;
 	font-family: 'Raleway', Arial, serif;
+	font-size: 16px;
 	border-radius: 20px;
+	width: 170px;
+	height: 40px;
+	text-align: left;
+	font-weight: bold;
+	display: inline-block;
 }
 
-#ele5
+#elem5
 {
 	color: black;
 	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
+	border: 3px #F2F2F2 solid;
 	font-family: 'Raleway', Arial, serif;
+	font-size: 16px;
 	border-radius: 20px;
+	width: 210px;
+	height: 40px;
+	text-align: left;
+	font-weight: bold;
+	display: inline-block;
 }
-#money
+
+#bloc1 li
 {
-	width: 20px;
-	height: 20px;
-	background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 10px;
-}
-#child
-{
-	width: 20px;
-	height: 20px;
-	background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 10px;
-}
-#heart
-{
-	width: 20px;
-	height: 20px;
-	background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 10px;
-}
-#dog
-{
-	width: 20px;
-	height: 20px;
-	background-color: #0065FC;
-    border: 1px #0065FC solid;
-    border-radius: 20px;
+	margin-right: 20px;
+    font-family: 'Raleway', Arial, serif;
+    display: inline;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* Hébergements */
@@ -225,97 +270,99 @@ section
 
 #first
 {
-	width: 850px;
-	height: 650px;
+	width: 900px;
+	height: 900px;
 	background-color: #F2F2F2;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: left;
-	align-content: space-between;
 	border-radius: 20px;
-	text-align: center;
-	display: inside-block;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+figcaption
+{
+    background-color: #FFFFFF;
+    color: black;
+    font-family: 'Raleway';
+    text-align: left;
+    border-radius: 0px 0px 25px 25px;
+    height: 85px;
+    outline-width: 90px;
 }
 
 section h2
 {
-	width: 0.8em;
-	text-align: left
-	font-family: 'Raleway';
+	margin-top: 10px;
+	margin-left: 15px;
 }
-
 
 #hotel1
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px; 
+	border-radius: 25px 25px 0px 0px;
 }
 
 #hotel2
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #hotel3
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #hotel4
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px;
+	border-radius: 25px 25px 0px 0px;;
 }
 
 #hotel5
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #hotel6
 {
-	width: 220px;
+	width: 215px;
 	height: 130px;
 	border: 5px #FFFFFF solid;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	border-bottom-width: 100px;
+	border-radius: 25px 25px 0px 0px;
 }
+
 /* Les plus populaires */
 
 #second
 {
 	width: 340px;
-	height: 650px;
+	height: 900px;
 	background-color: #F2F2F2;
 	position: right;
 	margin: right;
 	border-radius: 20px;
+	padding-top: 30px;
 }
 
 #hotel7
@@ -357,12 +404,9 @@ section h2
 	background-color: #F2FFFF;
 	display: flex;
 	position: row;
-	border-radius: 20px;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: left;
-	align-content: space-between;
-	border-radius: 20px;
+	align-content: flex-end;
 	text-align: center;
 }
 
@@ -445,6 +489,6 @@ footer ul, li
     display: column;
     padding-top: 10px;
     margin-left: 10px;
-    margin-right: 110px;
+    margin-right: 80px;
     font-family: 'Raleway'
 }
