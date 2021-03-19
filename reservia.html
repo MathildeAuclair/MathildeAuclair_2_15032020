@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="/users/mathmiko/desktop/reservia/font/css/all.css" rel="stylesheet">
         <title>Reservia</title>
     </head>
     <body>
@@ -11,105 +12,124 @@
 
                 <div id="titre_principal">
                     <div id="logo">
-                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p><img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" class="imageflottante" alt="Logo de Reservia" /></p>
+                        <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
                     </div>
                     <p>En plein centre ville ou en pleine nature</p>
                     </div>
 
                     <!---Bouton navigation--->
                     <nav>
+                      <div>
                         <ul id="menu">
                             <li><a href="#hébergements">Hébergements</a></li>
                             <li><a href="#activités">Activités</a></li>
                             <li><a href="#"><strong>S'incrire</strong></a></li>
                         </ul>
-                    </nav>
+                      </div>
+                  </nav>
                 </header>
-
+    
                 <!---Bouton MRS--->
-                <form role="search">
-                    <div>
-                    <img src="map.svg" alt="Map" id="Map" />
-                    <input type="search" id="maRecherche" name="q"
-                    placeholder="Marseille, France"
+                <form>
+                  <div id="mrs">
+                    <i class="fas fa-map-marker-alt" id="map"></i>
+                    <input type="search" name="rechercher" id="marecherche" placeholder="Marseille, France"
                     aria-label="Rechercher parmi le contenu du site">
-                    <button>Rechercher</button>
+                    <form role="search">
+                    <button id="chercher"><strong>Rechercher</strong></button>
                 </div>
             </form>
         </br>
                 <!---Filtres--->
-                <div id="conteneur">
-                    <div class="element 1">Filtres</div>
-                    <div class="element 2"><img src="money.svg" alt="money" id="money" />Economique</div>
-                    <div class="element 3"><img src="child.svg" alt="child" id="child" />Familial</div>
-                    <div class="element 4"><img src="heart.svg" alt="heart" id="heart" />Romantique</div>
-                    <div class="element 5"><img src="dog.svg" alt="dog" id="dog" />Animaux autorisés</div>
-                </div>
+                <div>
+                     <ul id="bloc1">
+                        <li id="ele1"><strong>Filtres</strong></li>
+                        <li><button id="elem2"><i class="fas fa-money-bill-wave"></i>Economique</button></li>
+                        <li><button id="elem3"><i class="fas fa-child" id="child"></i>Familial</button></li>
+                        <li><button id="elem4"><i class="fas fa-heart" id="heart"></i>Romantique</button></li>
+                        <li><button id="elem5"><i class="fas fa-dog" id="dog"></i>Animaux autorisés</button></li>
+                    </ul>
+                </div> 
 
                 <!---Plus de 500 logements--->
-                <p><img src="info.svg" alt="info" id="info" />  Plus de 500 logements sont disponible dans cette ville</p>
+            <div>
+                <p><i class="fas fa-info-circle" id="info"></i>  Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
 
                 <!---Block Hébergements à Marseille--->
-                <section class="first-container">
-                    <div class="first" id="first">
+                <section>
+                    <div id="first">
                       <h2 id="hébergements">Hébergements à Marseille</h2>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" />
-                        <p><strong>Auberge de Cannebière</strong></br>Nuit à partir de <strong>25 euros</strong></p></figure>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel2.jpg" alt="hotel2" id="hotel2" />
-                        <p><strong>Hôtel du port</strong></br>Nuit à partir de 52 <strong>euros</strong></p></figure>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel3.jpg" alt="hotel3" id="hotel3" />
-                        <p><strong>Hôtel Les mouettes</strong></br>Nuit à partir de 76 <strong>euros</strong></p></figure>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel4.jpg" alt="hotel4" id="hotel4" />
-                        <p><strong>Hôtel de la mer</strong></br>Nuit à partir de 46 <strong>euros</strong></p></figure>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel5.jpg" alt="hotel5" id="hotel5" />
-                        <p><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23 euros</strong></p></figure>
-                        <figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" />
-                        <p><strong>Hôtel chez Amina</strong></br>Nuit à partir de 96 <strong>euros</strong></p></figure>
+                        <div id="colonnes">
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" /><figcaption><strong>Auberge de Cannebière</strong></br>Nuit à partir de <strong>25 €</strong></figcaption></figure></span>
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel2.jpg" alt="hotel2" id="hotel2" /><figcaption><strong>Hôtel du port</strong></br>Nuit à partir de 52 <strong>€</strong></figcaption></figure></span>
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel3.jpg" alt="hotel3" id="hotel3" /><figcaption><strong>Hôtel Les mouettes</strong></br>Nuit à partir de 76 <strong>€</strong></figcaption></figure></span>
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel4.jpg" alt="hotel4" id="hotel4" /><figcaption><strong>Hôtel de la mer</strong></br>Nuit à partir de 46 <strong>€</strong></figcaption></figure></span>
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel5.jpg" alt="hotel5" id="hotel5" /><figcaption><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23 €</strong></figcaption></figure></span>
+                        <span><figure><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel6.jpg" alt="hotel6" id="hotel6" /><figcaption><strong>Hôtel chez Amina</strong></br>Nuit à partir de 96 <strong>€</strong></figcaption></figure></span>
+                       </div>
+                      <p id="affiche"><strong>Afficher plus</strong></p>
+                    </div>
+
+                <!---Block Aside Les plus Populaires--->
+                <div id="second">
+                    <h2 id="populaires">Les plus populaires</h2>
+                        <div class="hotel7"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel7.jpg" alt="hotel7" id="hotel7" />
+                        <p><strong>Hôtel Le Soleil du matin</strong></br>Nuit à partir de 128 <strong>€</strong></p></div>
+                        <div class="hotel8"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel8.jpg" alt="hotel8" id="hotel8" />
+                        <p><strong>Au coeur de l'eau Chambre d'hôtes</strong></br>Nuit à partir de 71 <strong>€</strong></p></div>
+                        <div class="hotel9"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel9.jpg" alt="hotel9" id="hotel9" />
+                        <p><strong>Hôtel Tout bleu et Blanc</strong></br>Nuit à partir de 68 <strong>€</strong></p></div>
                     </div>
                 </section>
 
-                <!---Block Aside Les plus Populaires--->
-                <section class="second-container">
-                <div class="second" id="second">
-                    <h2>Les plus populaires</h2>
-                    <aside>
-                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                        <img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" alt="Logo de Reservia" />
-                    </aside>
-                  </div>
-                </section>
-
                 <!---Activités à Marseille--->
-                <section>
+              <article>
+                <div id="activites">
                     <h1 id="activités">Activités à Marseille</h1>
-                    <article>
-                        
-                    </article>
-                </section>
+                        <div class="acti1"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti1.jpg" alt="acti1" id="acti1" />
+                        <p><strong>Vieux Port</strong></p></div>
+                        <div class="acti2"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti2.jpg" alt="acti2" id="acti2" />
+                        <p><strong>Fort de Pomègues</strong></p></div>
+                        <div class="acti3"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti3.jpg" alt="acti3" id="acti3" />
+                        <p><strong>Iles du Frioul</strong></p></div>
+                        <div class="acti4"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti4.jpg" alt="acti4" id="acti4" />
+                        <p><strong>Parc National des Calanques</strong></p></div>
+                        <div class="acti5"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti5.jpg" alt="acti5" id="acti5" />
+                        <p><strong>Notre-Dame-de-la-Garde</strong></p></div>
+                        <div class="acti6"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti6.jpg" alt="acti6" id="acti6" />
+                        <p><strong>Parc Longchamp</strong></p></div>
+                </div>
+            </article>
 
     <!----Pied de page---->
     <footer>
         <!--A propos-->
+        <div id="propos">
         <ul>
-            <li><a href="#"><strong>A propos</strong></a></li>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
+            <li><strong>A propos</strong></li></br>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
         </ul>
+        </div>
         <!---Nos Hébergements-->
+        <div id="nos">
         <ul>
-            <li><a href="#"><strong>Nos hébergements</strong></a></li>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
+            <li><strong>Nos hébergements</strong></li></br>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
         </ul>
+        </div>
         <!---Assistance-->
+        <div id="assistance">
         <ul>
-            <li><a href="#"><strong>Assistance</strong></a></li>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
+            <li><strong>Assistance</strong></li></br>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
         </ul>
+        </div>
     </footer>
   </body>
 </html>
