@@ -126,7 +126,7 @@ p
 {
 	height: 46px;
 	width: 50px;
-	border: 1px #F2F2F2 solid;
+	border: 1px #F2F2F1 solid;
 	border-radius: 20px 0px 0px 20px;
 	background-color: #F2F2F2;
 	text-align: center;
@@ -165,7 +165,7 @@ input
 {
 	color: #FFFFFF;
 	background-color: #0065FC;
-	border: 1px #0065FC solid;
+	border: 1px rgb(254,254,254) solid;
 	border-radius: 0px 20px 20px 0px;
 	height: 48px;
 	width: 140px;
@@ -191,7 +191,24 @@ i#eco
 	color: #0065FC;
 	margin-top: 8px;
 }
-
+i#eco1
+{
+	font-size: 18px;
+	color: #0065FC;
+	margin-top: 8px;
+}
+i#eco2
+{
+	font-size: 18px;
+	color: #0065FC;
+	margin-top: 8px;
+}
+i#eco3
+{
+	font-size: 18px;
+	color: #0065FC;
+	margin-top: 8px;
+}
 #elem2:hover
 {
 	background-color: #F2F2F2;
@@ -211,7 +228,7 @@ i#eco
 
 .rond
 {
-    border: 11px rgb(221,236,255) solid;
+    border: 11px rgb(221,236,254) solid;
 	background-color: rgb(221,236,255);
 	border-radius: 50%;
 	margin-right: 10px;
@@ -219,7 +236,7 @@ i#eco
 
 .rond1
 {
-    border: 11px rgb(221,236,255) solid;
+    border: 11px rgb(221,236,254) solid;
 	background-color: rgb(221,236,255);
 	border-radius: 20px 20px 20px 20px;
 	border-left-width: 15px;
@@ -229,7 +246,7 @@ i#eco
 
 .rond2
 {
-    border: 11px rgb(221,236,255) solid;
+    border: 11px rgb(221,236,254) solid;
 	background-color: rgb(221,236,255);
 	border-radius: 20px 20px 20px 20px;
 	margin-right: 10px;
@@ -239,7 +256,7 @@ i#eco
 
 .rond3
 {
-    border: 11px rgb(221,236,255) solid;
+    border: 11px rgb(221,236,254) solid;
 	background-color: rgb(221,236,255);
 	border-radius: 20px 20px 20px 20px;
 	border-left-width: 12px;
@@ -343,26 +360,25 @@ section h3, strong
 
 #hébergements
 {
-	margin-left: 40px;
+	margin-left: 30px;
 	margin-top: 40px;
 	text-align: left;
-	position: left;
 	font-family: 'Bold';
 }
 
-#hotel
+.hotel
 {
 	width: 270px;
-	height: 140px;
+	height: 150px;
 	border-radius: 25px 25px 0px 0px;
 }
 
 .box
 {
-    border: 5px #FFFFFF solid;
+    border: 5px rgb(254,254,254) solid;
 	background-color: #FFFFFF;
 	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 30px;
+	border-bottom-width: 25px;
 	display: inline-block;
 	text-decoration: none;
 	list-style-type: none;
@@ -377,6 +393,23 @@ section h3, strong
 }
 
 #gris
+{
+    color: #F2F2F2;
+}
+
+#gris1
+{
+    color: #F2F2F2;
+}
+#gris2
+{
+    color: #F2F2F2;
+}
+#gris3
+{
+    color: #F2F2F2;
+}
+#gris4
 {
     color: #F2F2F2;
 }
@@ -396,7 +429,7 @@ section h3, strong
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 420px;
-	height: 865px;
+	height: 880px;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding-top: 20px;
@@ -422,7 +455,7 @@ section h3, strong
 	margin-left: 25px;
 }
 
-#pop
+.pop
 {
     width: 170px;
 	height: 190px;
@@ -435,8 +468,8 @@ a.test
 {
 	width : 330px;
 	height: 190px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-right-width: 40px;
 	display: inline-block;
@@ -452,39 +485,39 @@ a.test
     color: #0065FC;
 }
 
-#gris
+#gris5
+{
+    color: #F2F2F2;
+}
+
+#gris6
 {
     color: #F2F2F2;
 }
 
 /*Activités*/
 
-article p, h2
-{
-	font-family: 'Bold';
-}
-
 article
 {
 	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
-}
-
-#activites
-{
-	width: 1370px;
-	height: 600px;
-	background-color: #FFFFFF;
-}
-
-.acti
-{
-	width: 1300px;
-	height: 500px;
-	background-color: #FFFFFF;
-	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+article h2
+{
+	font-family: 'Bold';
+}
+article p
+{
+	font-family: 'Bold';
+	margin-left: 20px;
+}
+
+#acti
+{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #activités
@@ -495,34 +528,34 @@ article
 
 a.acti1
 {
-	width: 280px;
+	width: 320px;
 	height: 438px;
-	border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+	border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
 	list-style-type: none;
 	color: black;
 	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
 	margin-left: 30px;
+	box-shadow: 2px 2px 2px #F2F2F2;
 	display: inline-block;
 }
 
 #img1
 {
-	width: 280px;
+	width: 320px;
 	height: 440px;
 	border-radius: 25px 25px 0px 0px;
 }
 
 a.acti2
 {
-	width: 280px;
+	width: 300px;
 	height: 210px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
@@ -537,16 +570,16 @@ a.acti2
 
 #img2
 {
-	width: 280px;
+	width: 300px;
 	height: 210px;
 	border-radius: 25px 25px 0px 0px;
 }
 a.acti3
 {
-	width: 280px;
+	width: 300px;
 	height: 150px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
@@ -560,7 +593,7 @@ a.acti3
 
 #img3
 {
-	width: 280px;
+	width: 300px;
 	height: 150px;
 	border-radius: 25px 25px 0px 0px;
 }
@@ -573,10 +606,10 @@ a.acti3
 
 a.acti4
 {
-	width: 280px;
+	width: 320px;
 	height: 438px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
@@ -590,17 +623,17 @@ a.acti4
 
 #img4
 {
-	width: 280px;
+	width: 320px;
 	height: 440px;
 	border-radius: 25px 25px 0px 0px;
 }
 
 a.acti5
 {
-	width: 280px;
+	width: 320px;
 	height: 180px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
@@ -615,17 +648,17 @@ a.acti5
 
 #img5
 {
-	width: 280px;
+	width: 320px;
 	height: 180px;
 	border-radius: 25px 25px 0px 0px;
 }
 
 a.acti6
 {
-	width: 280px;
+	width: 320px;
 	height: 180px;
-    border: 2px #FFFFFF solid;
-	background-color: #FFFFFF;
+    border: 2px rgb(254,254,254) solid;
+	background-color: white;
 	border-radius: 25px 25px 25px 25px;
 	border-bottom-width: 55px;
 	text-decoration: none;
@@ -640,33 +673,25 @@ a.acti6
 
 #img6
 {
-	width: 280px;
+	width: 320px;
 	height: 180px;
 	border-radius: 25px 25px 0px 0px;
 }
 
-.acti p
-{
-	margin-left: 15px;
-}
-
-/*footer*/
+/*pied de page*/
 
 footer
 {
-	width: 1440px;
-	height: 210px;
-	background-color: #F2F2F2;
-	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: #F2F2F2;
+	list-style-type: none;
 	margin-top: 30px;
 }
 
 footer li
 {
     list-style-type: none;
-    display: column;
     padding-top: 15px;
     margin-left: 10px;
     margin-right: 190px;
