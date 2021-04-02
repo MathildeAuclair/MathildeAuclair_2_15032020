@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="/users/mathmiko/desktop/reservia/font/css/all.css" rel="stylesheet">
         <title>Reservia</title>
     </head>
     <body>
@@ -12,7 +13,7 @@
                 <div id="titre_principal">
                     <div id="logo">
                         <p><img src="/users/mathmiko/desktop/reservia/images/logo/Reservia.svg" class="imageflottante" alt="Logo de Reservia" /></p>
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
                     </div>
                     <p>En plein centre ville ou en pleine nature</p>
                     </div>
@@ -28,48 +29,61 @@
                       </div>
                   </nav>
                 </header>
-
+    
                 <!---Bouton MRS--->
-                <form role="search">
-                    <div id="mrs">
-                    <img src="map.svg" alt="Map" id="Map" />
-                    <input type="search" id="marecherche" name="q"
-                    placeholder="Marseille, France"
+                <form>
+                  <div id="mrs">
+                    <i class="fas fa-map-marker-alt" id="map"></i>
+                    <input type="search" name="rechercher" id="marecherche" placeholder="Marseille, France"
                     aria-label="Rechercher parmi le contenu du site">
-                    <button id="bouton">Rechercher</button>
+                    <form role="search">
+                    <button id="chercher"><strong>Rechercher</strong></button>
                 </div>
             </form>
         </br>
                 <!---Filtres--->
-                <div id="conteneur">
-                    <div class="element 1">Filtres</div>
-                    <div class="element 2" id="ele2"><img src="money.svg" alt="money" id="money" />Economique</div>
-                    <div class="element 3" id="ele3"><img src="child.svg" alt="child" id="child" />Familial</div>
-                    <div class="element 4" id="ele4"><img src="heart.svg" alt="heart" id="heart" />Romantique</div>
-                    <div class="element 5" id="ele5"><img src="dog.svg" alt="dog" id="dog" />Animaux autorisés</div>
-                </div>
+                <div>
+                	 <ul id="bloc1">
+                        <li id="ele1"><strong>Filtres</strong></li>
+                        <li><button id="elem2"><i class="fas fa-money-bill-wave"></i>Economique</button></li>
+                        <li><button id="elem3"><i class="fas fa-child" id="child"></i>Familial</button></li>
+                        <li><button id="elem4"><i class="fas fa-heart" id="heart"></i>Romantique</button></li>
+                        <li><button id="elem5"><i class="fas fa-dog" id="dog"></i>Animaux autorisés</button></li>
+                    </ul>
+                </div> 
 
                 <!---Plus de 500 logements--->
             <div>
-                <p><img src="info.svg" alt="info" id="info" />  Plus de 500 logements sont disponible dans cette ville</p>
+                <p><i class="fas fa-info-circle" id="info"></i>  Plus de 500 logements sont disponible dans cette ville</p>
             </div>
 
                 <!---Block Hébergements à Marseille--->
                 <section>
                     <div id="first">
-                      <h2 id="hébergements">Hébergements à Marseille</h2>
-                        <div class="hotel1"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1"/>
-                        <p><strong>Auberge de Cannebière</strong></br>Nuit à partir de <strong>25 €</strong></p></div>
-                        <div class="hotel2"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel2.jpg" alt="hotel2" id="hotel2"/>
-                        <p><strong>Hôtel du port</strong></br>Nuit à partir de 52 <strong>€</strong></p></div>
-                        <div class="hotel3"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel3.jpg" alt="hotel3" id="hotel3"/>
-                        <p><strong>Hôtel Les mouettes</strong></br>Nuit à partir de 76 <strong>€</strong></p></div>
-                        <div class="hotel4"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel4.jpg" alt="hotel4" id="hotel4" />
-                        <p><strong>Hôtel de la mer</strong></br>Nuit à partir de 46 <strong>€</strong></p></div>
-                        <div class="hotel5"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel5.jpg" alt="hotel5" id="hotel5" />
-                        <p><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23 €</strong></p></div>
-                        <div class="hotel6"><img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel6.jpg" alt="hotel6" id="hotel6" />
-                        <p><strong>Hôtel chez Amina</strong></br>Nuit à partir de 96 <strong>€</strong></p></div>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel1.jpg" alt="hotel1" id="hotel1" />
+                        <figcaption><strong>Auberge de Cannebière</strong></br>Nuit à partir de <strong>25 €</strong></figcaption>
+                        </figure>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel2.jpg" alt="hotel2" id="hotel2" />
+                        <figcaption><strong>Hôtel du port</strong></br>Nuit à partir de 52 <strong>€</strong></figcaption>
+                        </figure>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel3.jpg" alt="hotel3" id="hotel3" />
+                        <figcaption><strong>Hôtel Les mouettes</strong></br>Nuit à partir de 76 <strong>€</strong></figcaption>
+                        </figure>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel4.jpg" alt="hotel4" id="hotel4" />
+                        <figcaption><strong>Hôtel de la mer</strong></br>Nuit à partir de 46 <strong>€</strong></figcaption>
+                        </figure>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel5.jpg" alt="hotel5" id="hotel5" />
+                        <figcaption><strong>Auberge Le Panier</strong></br>Nuit à partir de <strong>23 €</strong></figcaption>
+                        </figure>
+                        <figure>
+                        	<img src="/users/mathmiko/desktop/reservia/images/hebergements/3_medium/hotel6.jpg" alt="hotel6" id="hotel6" />
+                        <figcaption><strong>Hôtel chez Amina</strong></br>Nuit à partir de 96 <strong>€</strong></figcaption>
+                        </figure>
                     </div>
                 <!---Block Aside Les plus Populaires--->
                 <div id="second">
@@ -84,6 +98,7 @@
                 </section>
 
                 <!---Activités à Marseille--->
+              <article>
                 <div id="activites">
                     <h1 id="activités">Activités à Marseille</h1>
                         <div class="acti1"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti1.jpg" alt="acti1" id="acti1" />
@@ -99,6 +114,7 @@
                         <div class="acti6"><img src="/users/mathmiko/desktop/reservia/images/activites/3_medium/acti6.jpg" alt="acti6" id="acti6" />
                         <p><strong>Parc Longchamp</strong></p></div>
                 </div>
+            </article>
 
     <!----Pied de page---->
     <footer>
