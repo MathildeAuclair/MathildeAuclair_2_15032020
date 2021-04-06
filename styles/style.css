@@ -1,57 +1,43 @@
 @font-face
 {
     font-family: 'Raleway', sans-serif;
-    font-weight: normal;
-    font-style: normal; /* Safari, Android, iOS */
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold;
 }
-
-@font-face
-{
-  font-family: 'Bold', sans-serif;
-}
-
-/*Body*/
-
 body 
 {
-	font-family: 'Raleway', serif;
 	max-width: 1440px;
+	font-family: 'Raleway', sans-serif;
 }
-
 #bloc-page
 {
     max-width: 1440px;
     max-height: 1860px;
     margin: auto;
 }
-
 @media only screen and (min-width: 300px) and (max-width: 600px)
 {
-
  #bloc-page
 {
 	min-width: 300px;
     max-width: 768px;
 }
-
 header
 {
   width: 350px;
   height: 260px;
 }
-
 img.imageflottante
 {
   margin-left: 5px;
 }
-
 #logo
 {
   width: 100px;
   height: 75px;
   margin-bottom: 40px;
 }
-
 #menu
 {
   display: flex;
@@ -64,46 +50,39 @@ img.imageflottante
   margin-top: 10px;
   margin-bottom: 35px;
 }
-
 nav
 {
     margin-top: 20px;
     width: 100px;
     height: 40px;
 }
-
 nav strong
 {
   float: right;
   margin-bottom: 30px;
   margin-right: 30px;
 }
-
 nav a
 {
 	margin-top: 30px;
 	margin-left: 55px;
 }
-
 .trait, .trait-2
 {
 	width: 190px;
 	padding-bottom: 0.7em;
     border-bottom: 3px solid #F2F2F2;
 }
-
 .trait:hover, .trait-2:hover
 {
     border-bottom: 3px solid #0065FC;
     padding-bottom: 0.7em;
     color: #0065FC;
 }
-
 nav a:hover
 {
     color: #0065FC;
 }
-
 #titre-principal h1
 {
   font-size: 20px;
@@ -112,7 +91,6 @@ nav a:hover
   margin-left: 10px;
   margin-top: 85px;
 }
-
 #ville
 {
   font-size: 15px;
@@ -121,17 +99,14 @@ nav a:hover
   margin-top: 120px;
   width: 280px;
 }
-
 #mrs
 {
   margin-left: 10px;
 }
-
 #ma-recherche
 {
 	width: 260px;
 }
-
 #loupe
 {
   display: flex;
@@ -144,12 +119,10 @@ nav a:hover
   margin-left: -28px;
   border-radius: 12px 12px 12px 12px;
 }
-
 #chercher
 {
   display: none;
 }
-
 #filtres
 {
 	height: 220px;
@@ -159,23 +132,19 @@ nav a:hover
 	margin-top: 20px;
 	margin-left: 10px;
 }
-
 #titre
 {
 	height: 15px;
 	width: 300px;
 }
-
 #filtre-2, #filtre-4
 {
 	margin-right: 30px;
 }
-
 #filtre-2, #filtre-3, #filtre-4, #filtre-5
 {
 	margin-bottom: 10px;
 }
-
 #logement
 {
 	display: flex;
@@ -184,21 +153,18 @@ nav a:hover
 	font-size: 14px;
 	margin-bottom: 30px;
 }
-
 #logement p
 {
 	width: 350px;
 	font-size: 15px;
 	margin-bottom: 10px;
 }
-
 #info
 {
 	margin-right: 10px;
 	margin-top: 7px;
 	margin-left: 5px;
 }
-
 section
 {
 	width: 600px;
@@ -207,7 +173,6 @@ section
 	align-items: flex-start;
 	flex-direction: column-reverse;
 }
-
 #hébergements
 {
   font-size: 22px;
@@ -215,62 +180,52 @@ section
   margin-left: 15px;
   margin-bottom: 35px;
 }
-
 #populaires
 {
   margin-left: 15px;
   font-size: 22px;
   margin-top: 35px;
   margin-bottom: 28px;
-  font-family: 'Bold';
+  font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 #colonnes
 {
   display: inline-block;
   width: 450px;
 }
-
 .box
 {
   width: 328px;
   height: 225px;
 }
-
 .box i 
 {
   font-size: 12px;
 }
-
 .box h3
 {
   font-size: 16px;
   margin-left: 10px;
 }
-
 #etoile, #etoile-1, #etoile-2, #etoile-3, #etoile-4, #etoile-5
 {
   margin-left: 10px;
 }
-
 .box p
 {
   font-size: 14px;
   margin-left: 10px;
 }
-
 img.hotel
 {
   width: 326px;
   height: 140px;
 }
-
 #afficher-plus p
 {
   font-size: 18px;
   margin-left: 15px;
 }
-
 #second-bloc
 {
   max-width: 370px;
@@ -279,203 +234,84 @@ img.hotel
   display: flex;
   flex-direction: column;
 }
-
 img.aside-hotel
 {
   width: 130px;
   height: 150px;
 }
-
 a.aside-bloc
 {
   max-width: 280px;
   max-height: 150px;
   margin-left: 15px;
 }
-
-a.aside-bloc p
+a.aside-bloc i, p
 {
   font-size: 14px;
 }
-
 a.aside-bloc h3
 {
   font-size: 16px;
 }
-
-a.aside-bloc i
-{
-  font-size: 13px;
-}
-
 i#ligne
 {
   font-size: 23px;
   margin-right: 30px;
 }
-
 #troisieme-bloc h2
 {
   font-size: 23px;
   margin-bottom: 45px;
   margin-left: 15px;
 }
-
 #troisieme-bloc p 
 {
   font-size: 16px;
 }
-
 #troisieme-bloc
 {
   width: 500px;
-  height: 1620px;
+  height: 1650px;
 }
-
-#img1
-{
-  max-width: 328px;
-  max-height: 180px;
-}
-a.activites-1
-{
-  max-width: 328px;
-  max-height: 180px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
-
-a.activites-2
-{
-	width: 322px;
-	height: 160px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-	margin-left: 15px;
-    margin-bottom: 25px;
-}
-
-#img2
-{
-	width: 322px;
-	height: 160px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-a.activites-3
-{
-	width: 322px;
-	height: 160px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-	margin-left: 15px;
-    margin-bottom: 20px;
-}
-
-#img3
-{
-	width: 322px;
-	height: 160px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-#img4
-{
-  max-width: 328px;
-  max-height: 180px;
-}
-a.activites-4
+a.activites-1, a.activites-2, a.activites-3, a.activites-4, a.activites-5, a.activites-6
 {
   width: 328px;
   max-height: 180px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-#img5
-{
-  width: 328px;
-  height: 180px;
-}
-a.activites-5
-{
-  width: 328px;
-  height: 140px;
   margin-bottom: 25px;
   margin-left: 15px;
 }
-
-#img6
+#img1, #img2, #img3, #img4, #img5, #img6
 {
-  width: 328px;
+  width: 320px;
   height: 180px;
+  border-radius: 25px 25px 0px 0px;
 }
-a.activites-6
-{
-  width: 328px;
-  height: 140px;
-  margin-left: 15px;
-}
-
 .ajustement-bloc
 {
   width: 370px;
   height: 490px;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
-
 footer ul
 {
     font-size: 13px;
 }
-
 footer li
 {
 	width: 250px;
 	font-size: 13px;
 }
-a#apropos
-{
-	font-size: 15px;
-}
-
-a#hebergements
-{
-	font-size: 15px;
-}
-
-a#assistance
-{
-	font-size: 15px;
-}
 
 }
-
 @media only screen and (min-width: 600px) and (max-width: 1024px)
 {
-
 #bloc-page
 {
 	min-width: 600px;
     max-width: 1100px;
-    margin: auto;
+    margin-left: 15px;
 }
-
 #menu
 {
   display: flex;
@@ -484,29 +320,24 @@ a#assistance
   margin-right: 20px;
   font-size: 15px;
 }
-
 #titre-principal h1
 {
   font-size: 20px;
 }
-
 nav a:hover
 {
     color: #0065FC;
     border-top: 1.2px solid #0065FC;
     padding-top: 2.2em;
 }
-
 nav li
 {
 	margin-right: 35px;
 }
-
 #loupe
 {
   display: none;
 }
-
 #filtres
 {
 	display: flex;
@@ -516,12 +347,10 @@ nav li
 	margin-bottom: 20px;
 	text-align: left;
 }
-
 #filtre-2, #filtre-3, #filtre-4, #filtre-5
 {
 	margin-right: 35px;
 }
-
 #logement
 {
 	display: flex;
@@ -531,33 +360,27 @@ nav li
 	font-size: 15px;
 	margin-bottom: 30px;
 }
-
 #logement p
 {
 	width: 450px;
 	font-size: 15px;
 	margin-bottom: 10px;
 }
-
 #info
 {
 	margin-right: 10px;
 	margin-top: 7px;
-	margin-left: 15px;
 }
-
 section
 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 section h2
 {
   font-size: 19px;
 }
-
 #premier-bloc
 {
   width: 580px;
@@ -569,45 +392,33 @@ section h2
   justify-content: space-between;
   margin-bottom: 30px;
 }
-
 #colonnes
 {
   width: 550px;
   height: 570px;
 }
-
 .box
 {
   width: 165px;
   height: 180px;
 }
-
-.box i 
+.box i, p
 {
   font-size: 12px;
 }
-
 .box h3
 {
   font-size: 14px;
 }
-
-.box p
-{
-  font-size: 12px;
-}
-
 img.hotel
 {
   width: 165px;
   height: 100px;
 }
-
 #afficher-plus p
 {
   font-size: 17px;
 }
-
 #second-bloc
 {
   max-width: 350px;
@@ -618,13 +429,11 @@ img.hotel
   flex-direction: column;
   justify-content: space-between;
 }
-
 img.aside-hotel
 {
   width: 110px;
   height: 130px;
 }
-
 a.aside-bloc
 {
   max-width: 260px;
@@ -634,143 +443,61 @@ a.aside-bloc p
 {
   font-size: 11px;
 }
-
 #populaires
 {
   font-size: 18px;
-  font-family: 'Bold';
+  font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 #second-titre
 {
   height: 80px;
   width: 350px;
   margin-top: 10px;
 }
-
-a.aside-bloc h3
+a.aside-bloc i, h3
 {
   font-size: 12px;
 }
-
-a.aside-bloc i
-{
-  font-size: 12px;
-}
-
 i#ligne
 {
   font-size: 19px;
   margin-right: 30px;
 }
-
 #troisieme-bloc h2
 {
   font-size: 18px;
 }
-
 #troisieme-bloc p 
 {
   font-size: 12px;
   margin-left: 8px;
 }
-
-#img1
+a.activites-2, a.activites-3, a.activites-5, a.activites-6
+{
+	max-width: 190px;
+	max-height: 97px;
+}
+#img2, #img3, #img5, #img6
+{
+	max-width: 190px;
+	max-height: 102px;
+}
+#img1, #img4
 {
   max-width: 190px;
-  max-height: 280px;
+  height: 280px;
+  border-radius: 25px 25px 0px 0px;
 }
-a.activites-1
-{
-  max-width: 190px;
-  max-height: 270px;
-}
-
-a.activites-2
-{
-	width: 190px;
-	height: 102px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img2
-{
-	width: 190px;
-	height: 102px;
-	border-radius: 25px 25px 0px 0px;
-}
-a.activites-3
-{
-	width: 190px;
-	height: 90px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img3
-{
-	width: 190px;
-	height: 90px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-#img4
-{
-  max-width: 190px;
-  max-height: 280px;
-}
-a.activites-4
+a.activites-1, a.activites-4
 {
   max-width: 190px;
   max-height: 270px;
 }
-
-#img5
-{
-  max-width: 190px;
-  max-height: 102px;
-}
-a.activites-5
-{
-  max-width: 190px;
-  max-height: 97px;
-  margin-left: 20px;
-}
-
-#img6
-{
-  max-width: 190px;
-  max-height: 102px;
-}
-a.activites-6
-{
-  max-width: 190px;
-  max-height: 97px;
-}
-
 .ajustement-bloc
 {
   width: 220px;
   height: 350px;
 }
-
 footer ul
 {
 	width: 280px;
@@ -779,96 +506,48 @@ footer ul
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
-    font-size: 15px;
+    font-size: 14px;
 }
-
 footer li
 {
 	width: 250px;
 	font-size: 12px;
 }
-a#apropos
-{
-	font-size: 15px;
-}
-
-a#hebergements
-{
-	font-size: 15px;
-}
-
-a#assistance
-{
-	font-size: 15px;
-}
-
-/*marge page*/
-
-#hébergements
+#hébergements, #afficher-plus
 {
 	margin-left: 30px;
 }
-
-#afficher-plus
-{
-	margin-left: 40px;
-}
-
 #populaires
 {
 	margin-left: 40px;
 	margin-top: 30px;
 }
-
 #aside
 {
 	margin-left: 25px;
 }
-
 #activités
 {
 	margin-top: 30px;
 	margin-left: 40px;
 }
-
 a.activites-1, a.activites-2, a.activites-3, a.activites-4, a.activites-5, a.activites-6
 {
 	margin-left: 20px;
-}
-
-a.activites-2
-{
 	margin-bottom: 20px;
-	margin-right: 20px;
-}
-
-a.activites-3
-{
-	margin-right: 20px;
-
-}
-
-a.activites-5
-{
-	margin-bottom: 20px;
-
 }
 
 }
-
 @media only screen and (min-width: 1024px) and (max-width: 1800px)
 {
-
 #titre-principal, #mrs
 {
 	margin-left: 15px;
 }
-
 nav li
 {
 	margin-right: 35px;
 }
-
 #premier-bloc
 {
 	display: flex;
@@ -880,7 +559,6 @@ nav li
 	height: 860px;
 	margin-bottom: 20px;
 }
-
 #second-bloc
 {
 	display: inline-block;
@@ -892,21 +570,18 @@ nav li
 	border-radius: 20px;
 	padding-top: 20px;
 }
-
 nav a:hover
 {
     color: #0065FC;
     border-top: 1.2px solid #0065FC;
     padding-top: 2.2em;
 }
-
 .ajustement-bloc
 {
 	width: 320px;
 	height: 500px;
 	margin-right: 30px;
 }
-
 #filtres
 {
 	display: flex;
@@ -917,17 +592,14 @@ nav a:hover
 	text-align: left;
 	margin-left: 17px;
 }
-
 #loupe
 {
   display: none;
 }
-
 #filtre-2, #filtre-3, #filtre-4, #filtre-5
 {
 	margin-right: 45px;
 }
-
 #logement
 {
 	display: flex;
@@ -937,125 +609,54 @@ nav a:hover
 	font-size: 15px;
 	margin-bottom: 30px;
 }
-
 #logement p
 {
 	width: 450px;
 	font-size: 16px;
 	margin-bottom: 10px;
 }
-
 #info
 {
 	margin-right: 10px;
 	margin-top: 7px;
 	margin-left: 15px;
 }
-
-#hébergements
+#hébergements, #afficher-plus
 {
 	margin-left: 30px;
 }
-
-#afficher-plus
-{
-	margin-left: 40px;
-}
-
 #populaires
 {
 	margin-left: 40px;
 	font-size: 24px;
 	margin-bottom: 60px;
-	font-family: 'Bold';
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 #aside
 {
 	margin-left: 25px;
 }
-
 #activités
 {
 	margin-top: 30px;
 	margin-left: 40px;
 }
-
 a.activites-1, a.activites-2, a.activites-3, a.activites-4, a.activites-5, a.activites-6
 {
 	margin-left: 30px;
-}
-
-a.activites-2
-{
 	margin-bottom: 20px;
-	margin-right: 30px;
 }
-
-a.activites-3
+#img1, #img4
 {
-	margin-right: 30px;
-
-}
-
-a.activites-5
-{
-	margin-bottom: 20px;
-
-}
-
-a.activites-2
-{
-	width: 300px;
-	height: 210px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img2
-{
-	width: 300px;
-	height: 210px;
-	border-radius: 25px 25px 0px 0px;
-}
-a.activites-3
-{
-	width: 300px;
-	height: 150px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img3
-{
-	width: 300px;
-	height: 150px;
+	width: 320px;
+	height: 440px;
 	border-radius: 25px 25px 0px 0px;
 }
 
-}	
-
-/* Navigation */
-
+}
+/*Desktop*/
 #menu
 {
-  font-family: 'Raleway', Arial, serif;
   float: right;
   justify-content: flex-end;
 }
@@ -1065,31 +666,24 @@ nav
     max-width: 600px;
     max-height: 50px;
 }
-
 nav ul
 {
     list-style-type: none;
 }
 nav li
 {
-    font-family: 'Raleway', Arial, serif;
     display: inline;
 }
-
 nav a
 {
     font-size: 1.1em;
     color: black;
     text-decoration: none;
 }
-
 nav strong
 {
     color: #0065FC;
 }
-
-/*en-tête*/
-
 header
 {
     display: flex;
@@ -1098,31 +692,25 @@ header
 header h1
 {
     font-size: 1.5em;
-    font-family: 'Bold', Arial, serif;
+    font-family: 'Raleway', sans-serif; font-weight: 600;
 }
 header p
 {
-    font-family: 'Raleway', Arial, serif;
     font-size: 0.95em;
     margin-bottom: 30px;
 }
-
 #logo
 {
   margin-top: 15px;
 }
-
-/* Bouton de recherche */
-
 #mrs
 {
 	display: flex;
 	justify-content: flex-start;
 	max-height: 70px;
 	max-width: 500px;
-	font-family: 'Bold';
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 #map
 {
 	height: 46px;
@@ -1133,35 +721,30 @@ header p
 	text-align: center;
 	font-size: 22px;
 }
-
 #localisation
 {
 	margin-top: 10px;
 }
-
 #ma-recherche
 {
 	background-color: #FFFFFF;
 	border: 1px #F2F2F2 solid;
-	font-family: 'Bold', Arial, serif;
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 	font-size: 20px;
 	height: 46px;
 	min-width: 250px;
 	text-align: left;
 }
-
 input
 {
 	margin-left: 10px;
 	height: 45px;
 	width: 240px;
 	font-size: 20px;
-	font-family: 'Bold', Arial, serif;
-	color: black;	
+	font-family: 'Raleway', sans-serif; font-weight: 600;
+	color: black;
 	border: hidden;
-	text-decoration-color: blue;
 }
-
 #chercher
 {
 	color: #FFFFFF;
@@ -1170,151 +753,58 @@ input
 	border-radius: 0px 20px 20px 0px;
 	height: 48px;
 	width: 140px;
-	font-family: 'Bold';
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 	font-size: 18px;
 }
-
 ::placeholder
 {
   color: black;
+  opacity: 1;
 }
-
-/*Filtres*/
-
-i#money
+i#money, i#child, i#heart, i#dog
 {
 	font-size: 18px;
 	color: #0065FC;
 	margin-top: 8px;
 }
-i#child
-{
-	font-size: 18px;
-	color: #0065FC;
-	margin-top: 8px;
-}
-i#heart
-{
-	font-size: 18px;
-	color: #0065FC;
-	margin-top: 8px;
-}
-i#dog
-{
-	font-size: 18px;
-	color: #0065FC;
-	margin-top: 8px;
-}
-
 .rond
 {
     border: 11px rgb(221,236,254) solid;
 	background-color: rgb(221,236,255);
-	border-radius: 50%;
-	margin-right: 10px;
-	margin-left: -8px;
-}
-
-.rond-1
-{
-    border: 11px rgb(221,236,254) solid;
-   	background-color: rgb(221,236,255);
 	border-radius: 20px 20px 20px 20px;
-	border-left-width: 15px;
-	border-right-width: 15px;
+	border-left-width: 13px;
+	border-right-width: 13px;
 	margin-right: 10px;
 	margin-left: -8px;
 }
-
-.rond-2
-{
-    border: 11px rgb(221,236,254) solid;
-	background-color: rgb(221,236,255);
-	border-radius: 20px 20px 20px 20px;
-	margin-right: 10px;
-	border-left-width: 14px;
-	border-right-width: 14px;
-	margin-left: -8px;
-}
-
-.rond-3
-{
-    border: 11px rgb(221,236,254) solid;
-	background-color: rgb(221,236,255);
-	border-radius: 20px 20px 20px 20px;
-	border-left-width: 12px;
-	border-right-width: 12px;
-	margin-right: 10px;
-	margin-left: -8px;
-}
-
 #titre
 {
 	font-size: 16px;
 	margin-top: 10px;
-	font-family: 'Bold';
-	margin-right: 25px;
+	font-family: 'Raleway', sans-serif; font-weight: 600;
+	margin-right: 30px;
 }
-
-#filtre-2
+#filtre-2, #filtre-3, #filtre-4, #filtre-5
 {
-	color: black;
-	background-color: #FFFFFF;
 	border: 2px #F2F2F2 solid;
-	font-family: 'Bold';
-	font-size: 16px;
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 	border-radius: 20px;
 	width: 160px;
 	height: 35px;
 }
-
 #filtre-3
 {
-	color: black;
-	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
-	font-family: 'Bold';
-	font-size: 16px;
-	border-radius: 20px;
 	width: 140px;
-	height: 35px;
-
 }
-
-#filtre-4
-{
-	color: black;
-	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
-	font-family: 'Bold';
-	font-size: 16px;
-	border-radius: 20px;
-	width: 170px;
-	height: 35px;
-	
-}
-
 #filtre-5
 {
-	color: black;
-	background-color: #FFFFFF;
-	border: 2px #F2F2F2 solid;
-	font-family: 'Bold';
-	font-size: 16px;
-	border-radius: 20px;
 	width: 220px;
-	height: 35px;
-	
 }
-
 #filtre-2:hover, #filtre-3:hover, #filtre-4:hover, #filtre-5:hover
 {
 	background-color: #F2F2F2;
 	cursor: pointer;
 }
-
-/* Plus d'informations */
-
 #info
 {
 	display: flex;
@@ -1328,21 +818,16 @@ i#dog
     border: 4px #F2F2F2 solid;
     border-radius: 30px 30px 30px 30px;
 }
-
-/* Hébergements */
-
 section
 {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-
 section h3, strong
 {
-    font-family: 'Bold';
+    font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 #colonnes
 {
 	display: flex;
@@ -1350,21 +835,18 @@ section h3, strong
 	justify-content: space-between;
 	margin: 2%;
 }
-
 #hébergements
 {
 	margin-top: 40px;
 	text-align: left;
-	font-family: 'Bold';
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 }
-
 .hotel
 {
 	width: 270px;
 	height: 150px;
 	border-radius: 25px 25px 0px 0px;
 }
-
 .box
 {
     border: 5px rgb(254,254,254) solid;
@@ -1378,49 +860,25 @@ section h3, strong
 	margin-bottom: 25px;
 	box-shadow: 3px 3px 3px rgb(235,235,235);
 }
-
 .box i
 {
     color: #0065FC;
 }
-
-#gris
+#gris, #gris-1, #gris-2, #gris-3, #gris-4, #gris-5, #gris-6, #gris-7
 {
     color: #F2F2F2;
 }
-
-#gris1
-{
-    color: #F2F2F2;
-}
-#gris2
-{
-    color: #F2F2F2;
-}
-#gris3
-{
-    color: #F2F2F2;
-}
-#gris4
-{
-    color: #F2F2F2;
-}
-
 #afficher-plus
 {
 	font-size: 21px;
 	margin-bottom: 20px;
 }
-
-/* Les plus populaires */
-
 #ligne
 {
 	font-size: 25px;
 	float: right;
 	margin-right: 40px;
 }
-
 .aside-hotel
 {
     width: 170px;
@@ -1429,7 +887,6 @@ section h3, strong
 	float: left;
 	margin-right: 15px;
 }
-
 a.aside-bloc
 {
 	width : 330px;
@@ -1439,7 +896,6 @@ a.aside-bloc
 	border-radius: 25px 25px 25px 25px;
 	border-right-width: 40px;
 	display: inline-block;
-	overflow: visible;
 	text-decoration: none;
 	list-style-type: none;
 	color: black;
@@ -1450,43 +906,23 @@ a.aside-bloc
 {
     color: #0065FC;
 }
-
-#gris5
-{
-    color: #F2F2F2;
-}
-
-#gris6
-{
-    color: #F2F2F2;
-}
-
-/*Activités*/
-
 article
 {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
-
-article h2
+article p, h2
 {
-	font-family: 'Bold';
-}
-article p
-{
-	font-family: 'Bold';
+	font-family: 'Raleway', sans-serif; font-weight: 600;
 	margin-left: 20px;
 }
-
 #conteneur
 {
 	display: flex;
 	flex-wrap: wrap;
 }
-
-a.activites-1
+a.activites-1, a.activites-2, a.activites-3, a.activites-4, a.activites-5, a.activites-6
 {
 	width: 320px;
 	height: 438px;
@@ -1501,85 +937,28 @@ a.activites-1
 	box-shadow: 2px 2px 2px #F2F2F2;
 	display: inline-block;
 }
-
-#img1
+a.activites-2, a.activites-5, a.activites-6
 {
 	width: 320px;
-	height: 440px;
+	height: 185px;
+}
+#img2, #img5, #img6
+{
+	width: 320px;
+	height: 185px;
+	border-radius: 25px 25px 0px 0px; 
+}
+a.activites-3
+{
+	width: 320px;
+	height: 175px;
+}
+#img3
+{
+	width: 320px;
+	height: 175px;
 	border-radius: 25px 25px 0px 0px;
 }
-
-a.activites-4
-{
-	width: 320px;
-	height: 438px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img4
-{
-	width: 320px;
-	height: 440px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-a.activites-5
-{
-	width: 320px;
-	height: 180px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img5
-{
-	width: 320px;
-	height: 180px;
-	border-radius: 25px 25px 0px 0px;
-}
-
-a.activites-6
-{
-	width: 320px;
-	height: 180px;
-    border: 2px rgb(254,254,254) solid;
-	background-color: white;
-	border-radius: 25px 25px 25px 25px;
-	border-bottom-width: 55px;
-	text-decoration: none;
-	list-style-type: none;
-	display: inline-block;
-	color: black;
-	font-size: 17px;
-	box-shadow: 2px 2px 2px #F2F2F2;
-	display: inline-block;
-}
-
-#img6
-{
-	width: 320px;
-	height: 180px;
-	border-radius: 25px 25px 0px 0px;
-}
-/*pied de page*/
-
 footer
 {
 	display: flex;
@@ -1588,30 +967,15 @@ footer
 	list-style-type: none;
 	margin-top: 30px;
 }
-
 footer li
 {
     list-style-type: none;
     padding-top: 15px;
     margin-left: 10px;
     margin-right: 190px;
-    font-family: 'Raleway'
 }
-
-#apropos
+.titre-footer
 {
-    font-family: 'Bold';
-    font-size: 18px;
-}
-
-#hebergements
-{
-    font-family: 'Bold';
-    font-size: 18px;
-}
-
-#assistance
-{
-    font-family: 'Bold';
+    font-family: 'Raleway', sans-serif; font-weight: 600;
     font-size: 18px;
 }
