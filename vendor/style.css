@@ -1,21 +1,21 @@
 @font-face
 {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: normal;
     font-style: normal; /* Safari, Android, iOS */
 }
 
 @font-face
 {
-  font-family: 'Bold';
-  src: url(/users/mathmiko/desktop/reservia/vendor/font/lettring/bold.ttf) format('truetype');
+  font-family: 'Bold', sans-serif;
 }
+
 /*Body*/
 
 body 
 {
+	font-family: 'Raleway', serif;
 	max-width: 1440px;
-	font-family: 'Raleway', Arial, serif;
 }
 
 #bloc-page
@@ -1174,7 +1174,7 @@ input
 	font-size: 18px;
 }
 
-::placeholder 
+::placeholder
 {
   color: black;
 }
